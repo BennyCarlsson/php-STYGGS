@@ -1,0 +1,31 @@
+$(document).ready(function(){
+	$(".clanMissionDiv").hide();
+  	$(".clanMissionButton").click(function(e){ 
+  		$(".clanMissionDiv").hide();
+	  	var uObj = new utility();
+	  	//var setName = e.target.id;
+	  	//var prepSetName;
+	  	
+	  	//alert(prepSetName);  	
+	  	
+	  	//alert(utilityObj.stripName(e.target.id));  
+	  	var divToShow = uObj.addToName(uObj.stripName(e.target.id));
+	  	$("#" + divToShow).show();
+		$("#" + divToShow).offset({left:e.pageX,top:e.pageY});
+	});
+	
+	$("#clanMissionsMap").click(function(){
+		//$(".clanMissionDiv").hide();
+		//alert("Göm för fan!");
+	});
+});
+
+function utility() {
+	this.stripName = function(string){
+		while(string.charAt('b') === 'b')
+    	return string.substr(1);
+	};
+	this.addToName = function(string){
+		return "d" + string;
+	};
+}

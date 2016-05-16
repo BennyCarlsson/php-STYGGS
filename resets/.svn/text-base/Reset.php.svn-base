@@ -1,0 +1,54 @@
+<?php
+
+require_once('ResetDAL.php');
+require_once('inGame/mainContent/clanMissions/clanObjective.php');
+
+Class Reset {
+	
+	private $ResetDAL;
+	
+	public function __construct(){
+		$this -> ResetDAL = new ResetDAL();
+	}
+	
+	public function ResetDailyMissions(){
+		$this -> ResetDAL -> ResetDailyMissions();
+	}
+	
+	public function ResolveClanObjectives(){
+		$objectiveArray = $this -> ResetDAL -> GetAllClanObjectives();
+		$actionsArray = $this -> ResetDAL -> GetAllObjectiveActions();
+		
+		foreach($objectiveArray as $objective){
+			
+			$defendingClanId = 0;
+			$defendingUnits = 0;
+			
+			$greatestAttackerId = 0;
+			$greatestAttackerUnits = 0;
+			
+			$winningClanId = 0;
+			
+			foreach($actionsArray as $action){
+				if($objective -> objectiveId == $action -> ClanObjectiveId){
+					if($action -> AttackingUnits > $greatestAttackerUnits){
+						$greatestAttackerUnits = $action -> AttackingUnits;
+						$greatestAttackerId = $action -> ClanId;
+					} else if($action -> DefendingUnits > $defendingUnits){
+						$defendingUnits = $action -> DefendingUnits;
+						$defendingClanId = $action -> ClanId;
+					}
+				}
+				if($defendingUnits >= $greatestAttackerUnits){
+					$winningClanId = $defendingClanId;
+				} elseif($greatestAttackerUnits > $defendingUnits){
+					$winningClanId = $greatestAttackerId;
+				}
+			}
+			//Set new owner
+			$this -> ResetDAL -> SetNewObjectiveOwner($objective -> objectiveId, $winningClanId);
+		}		
+		//Clear all objective actions
+		$this -> ResetDAL -> ClearObjectiveActions();
+	}
+}

@@ -1,0 +1,205 @@
+body {
+background-image:url('../images/cityBackground2.jpg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size: 100% auto;
+background-color: black;
+color: white;
+width: auto;
+height: auto;
+}
+#topMenuDiv{
+border-radius:5px;
+background-color: rgba(0,0,0,0.85);
+width: 100%;
+float: left;
+text-align: center;
+height: auto;
+border:solid black 3px;
+box-shadow: #000 0px 0px 15px;
+}
+#statsDiv{
+	border-radius:5px;
+	background-color: rgba(0,0,0,0.85);
+	border-radius:5px;
+	width: 50%;
+	height: auto;
+	margin: auto;
+	text-align: center;
+	border:solid black 3px;
+	font-size:20px;
+}
+#gameMenuDiv{
+border-radius:5px;
+background-color: rgba(0,0,0,0.85);
+box-shadow: #000 0px 0px 15px;
+width: 12%;
+height: auto;
+float: left;
+margin-top: 45px;
+}
+#gameMenuDiv a{
+	font-size:20px;
+	color: #828DDF;
+	line-height:29px;
+	margin-left:30px;
+}
+#gameMenuDiv a:hover{ 
+	cursor: pointer;
+	color:white;
+}
+#gameMenuDiv p{
+	font-size:20px;
+	font-weight:bold;
+	margin-left:32px;
+}
+#mainContentDiv{
+background-color: rgba(0,0,0,0.75);
+box-shadow: #000 0px 0px 15px;
+display: block;
+width: 50%;
+max-height: 30%;
+margin: auto;
+overflow: auto;
+border-radius:5px;
+margin-top: 20px;
+z-index:0;
+}
+#missionsDiv{
+	margin-left:80px;
+}
+#clansDiv{
+	margin-left:80px;
+}
+#shopDiv{
+	margin-left:80px;
+}
+#scoreboardDiv{
+	margin-left:80px;
+}
+#clanForumDiv{
+	margin-left:80px;
+}
+#eventsDiv{
+	background-color: rgba(0,0,0,0.85);
+	box-shadow: #000 0px 0px 15px;
+	border-radius:5px;
+	width: 15%;
+	float:right;
+	height: auto;
+	margin-top: 45px;
+	margin-right:-5px;
+	line-height:29px;
+}
+#eventsDiv form{
+	margin-right:15px;
+	margin-left:5px;
+}
+#eventsDiv h5{
+	margin-right:15px;
+	margin-left:5px;
+}
+#memberListDiv{
+text-align:justify;
+float: auto;
+margin: auto;
+margin-left:20%;
+}
+#clanList{
+float: auto;
+margin: auto;
+}
+#playerScoreboardDiv{
+	width: 100%;
+	text-align: left;
+	margin-right:10px;
+}
+#playerScoreboardDiv ol{
+	margin-right:10px;
+	
+}
+#leaveButton{
+	float:right;
+	margin-right:80px;
+	margin-top:25px;
+}
+.threadClass{
+border-bottom:solid black 3px;
+}
+.comment{
+	border-bottom:solid black 3px;
+}
+.comments{
+	border-top:solid black 3px;
+}
+.joinButton{
+	margin-left:100px;
+}
+.resultDiv{
+	width: 100%;
+	text-align: justify;
+}
+.resultBoxDiv{
+	text-align: justify;
+	float: left;
+	margin:10px;
+}
+p{
+color:white;
+}
+ul{
+	list-style-type: none;
+	color:white;
+}
+ol{
+	float: left;
+	display: inline-block;
+    display: inline;
+    text-align: justify;
+}
+
+.highRiskButton{
+	float:left;
+}
+#footer{
+	margin-left: 25%;
+	width: 100%;
+	height: auto;
+	float: right;
+	margin-right:5px;
+	text-align:right;
+	margin-top:40%;
+}
+footer p{
+	color:gray;
+}
+#missionsDiv form{
+	border-bottom-style:solid;
+	border-width:5px;
+}
+#missionButton{
+	margin-bottom:10px;
+}
+#about{
+	background-color: rgba(0,0,0,0.75);
+	box-shadow: #000 0px 0px 15px;
+	display: block;
+	width: 50%;
+	max-height: 30%;
+	margin: auto;
+	overflow: auto;
+	border-radius:5px;
+	margin-top: 20px;
+}
+#contact{
+	background-color: rgba(0,0,0,0.75);
+	box-shadow: #000 0px 0px 15px;
+	display: block;
+	width: 50%;
+	max-height: 30%;
+	margin: auto;
+	overflow: auto;
+	border-radius:5px;
+	margin-top: 20px;
+}
+

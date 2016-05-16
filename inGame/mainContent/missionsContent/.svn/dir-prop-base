@@ -1,0 +1,11 @@
+K 18
+svn:global-ignores
+V 5
+test
+
+K 10
+svn:ignore
+V 5
+test
+
+END

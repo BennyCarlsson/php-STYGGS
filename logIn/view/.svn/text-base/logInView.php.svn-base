@@ -1,0 +1,100 @@
+<?php
+
+require_once 'logInViewReturner.php';
+require_once 'sessionHandler.php';
+
+Class LogInView{
+	private $logInFormDiv;
+	private $errorMessage;
+	private $LogInViewReturner;
+	private $sessionHandler;
+	private static $logInButton = "logInButton";
+	
+	public function __construct(){
+		$this->logInFormDiv = "logInFormDiv";
+		$this->LogInViewReturner = new LogInViewReturner(); 
+		$this->sessionHandler = new logInSessionHandler();
+	}
+	
+	//log in form html
+	public function logInFormHtml($logInErrorNr){
+		$logInError = $this->getLogInError($logInErrorNr);
+		$usernameValue = $this->sessionHandler->getNameSession();
+		if($usernameValue == ""){
+			$usernameValue = $this->sessionHandler->getMailSession();
+		}
+		$this->sessionHandler->destroyNameSession();
+		$this->sessionHandler->destroyMailSession();
+		$logInForm = 
+		"
+			<div id='$this->logInFormDiv'>
+				<div id='logInError'>
+					<p>$logInError</p>
+				</div>
+				<form id='logInForm' method='post' role='form'>
+					<input type='text' name='Username' id='usernameInput' placeholder='Username' value='$usernameValue'>
+					<input type='password' name='Password' id='passwordInput' placeholder='Password'>
+					<label>
+					<input type='checkbox' name='keepMeLoggedInBox'>Keep me logged in
+					</label>
+					<input type='submit' id='logInButton' name='".self::$logInButton."'/>
+					<a href='register.php'>register</a>
+				</form>
+			</div>
+		";
+		echo $logInForm;		
+	}
+	public function logInButtonCheck(){
+		if(isset($_POST[self::$logInButton])){
+			return TRUE;
+		}
+		else{
+			return FALSE;
+		}
+	}
+	
+	//make checks at the view
+	public function viewCheck(){
+		$username = $this->LogInViewReturner->getUsername();
+		$password = $this->LogInViewReturner->getPassword();
+		if(empty($username)){
+			return FALSE;
+		}else if(empty($password)){
+			return FALSE;
+		}
+		return TRUE;
+
+			
+	}
+	
+	private function getLogInError($logInErrorNr){
+		
+		switch($logInErrorNr){
+			case 1:
+				$logInError = "Type in Mail and Password!";
+				break;
+			case 2:
+				$logInError = "Wrong Mail or Password";
+				break;
+			default:
+				$logInError = "";
+				break;
+		}
+		return $logInError;	
+	}
+		
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

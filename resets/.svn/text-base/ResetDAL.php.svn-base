@@ -1,0 +1,39 @@
+<?php
+
+require_once('db/db.php');
+require_once('inGame/mainContent/clanMissions/clanMissionsDAL.php');
+
+Class ResetDAL {
+
+	private $clanMissionsDAL;
+
+	public function __construct(){
+		$this -> clanMissionsDAL = new clanMissionsDAL();
+	}
+	
+	public function ResetDailyMissions(){
+		$db = new DB();
+		$connection = $db -> getCon();
+		$connection->query("CALL resetDailyMissions()");
+		$connection -> close();
+	}
+	
+	//Returns an array with all objective actions
+	public function GetAllObjectiveActions(){
+		return $this -> clanMissionsDAL -> getObjectiveActions();
+	}
+	
+	//Returns an array with all clan objectives
+	public function GetAllClanObjectives(){
+		return $this -> clanMissionsDAL -> getClanObjectives();
+	}
+	
+	public function ClearObjectiveActions(){
+		$this -> clanMissionsDAL -> ClearObjectiveActions();
+	}
+	
+	public function SetNewObjectiveOwner($objectiveId, $clanId){
+		$this -> clanMissionsDAL -> ChangeObjectiveOwner($objectiveId, $clanId);
+	}
+	
+}

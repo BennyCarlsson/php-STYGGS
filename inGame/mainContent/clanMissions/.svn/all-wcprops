@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/113/trunk/Projekt%20kod/inGame/mainContent/clanMissions
+END
+clanMissionsDAL.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/112/trunk/Projekt%20kod/inGame/mainContent/clanMissions/clanMissionsDAL.php
+END
+clanMissionsController.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/113/trunk/Projekt%20kod/inGame/mainContent/clanMissions/clanMissionsController.php
+END
+clanObjective.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/103/trunk/Projekt%20kod/inGame/mainContent/clanMissions/clanObjective.php
+END
+objectiveAction.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/103/trunk/Projekt%20kod/inGame/mainContent/clanMissions/objectiveAction.php
+END

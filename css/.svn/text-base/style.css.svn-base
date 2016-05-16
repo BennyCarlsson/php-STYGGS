@@ -1,0 +1,91 @@
+body {
+background-image:url('../images/cityBackground.jpg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size: 100% auto;
+background-color: black;
+color: white;
+width: auto;
+height: auto;
+}
+#topMenuDiv{
+border-radius:5px;
+background-color: gray;
+width: 100%;
+float: left;
+text-align: center;
+height: auto;
+border:solid black 3px;
+}
+#statsDiv{
+border-radius:5px;
+background-color: gray;
+width: 50%;
+height: auto;
+margin: auto;
+text-align: center;
+border:solid black 3px;
+}
+#gameMenuDiv{
+border-radius:5px;
+background-color: gray;
+width: 8%;
+height: auto;
+border:solid black 3px;
+float: left;
+margin-top: 45px;
+}
+#mainContentDiv{
+background-color: #313133;
+display: block;
+width: 70%;
+max-height: 30%;
+margin: auto;
+border:solid black 3px;
+overflow: auto;
+border-radius:5px;
+margin-top: 20px;
+}
+#eventsDiv{
+border-radius:5px;
+background-color: #403F3D;
+width: auto;
+
+border:solid black 3px;
+float:right;
+height: 30%;
+}
+#chatDiv{
+border-radius:5px;
+background-color: #403F3D;
+width: auto;
+height: auto;
+border:solid black 3px;
+float:right;
+height: 30%;
+}
+#memberListDiv{
+text-align:center;
+float: auto;
+margin: auto;
+}
+.threadClass{
+border-bottom:solid black 3px;
+}
+.comment{
+	border-bottom:solid black 3px;
+}
+.comments{
+	border-top:solid black 3px;
+}
+p{
+color:white;
+}
+ul{
+	list-style-type: none;
+color:white;
+}
+
+
+
+

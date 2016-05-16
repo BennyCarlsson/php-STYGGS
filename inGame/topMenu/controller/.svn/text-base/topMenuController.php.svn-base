@@ -1,0 +1,10 @@
+<?php
+
+class topMenuController{
+	
+	public function GetHTML(){
+		return "<div class='' id='topMenuDiv'>
+		<a>Home</a> | <a>About</a> | <a>Contact</a> | <a href='logIn.php'>Log out!</a>
+		</div>";
+	}
+}

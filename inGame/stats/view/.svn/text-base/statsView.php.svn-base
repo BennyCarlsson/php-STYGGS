@@ -1,0 +1,16 @@
+<?php
+
+class StatsView{
+	
+	public function getStatsHtml($username, $money, $lvl, $xp, $xpReq, $followers, $dailyMissionsRemaining, $clanName){
+		return "<div id='statsDiv'>
+		Username: $username |
+		Level: $lvl |
+		Experience: $xp / $xpReq |
+		Cash: $money |				
+		Followers: $followers |
+		Daily Missions Done: $dailyMissionsRemaining/10 |
+		Clan: $clanName
+		</div>";
+	}
+}

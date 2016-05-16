@@ -1,0 +1,263 @@
+{
+  
+	"missionList": [
+      
+	{"missionTitle":"Rob old lady", 
+      
+	"missionDescription":"Rob the old lady who lives next to you.",
+      
+	"levelReq":1,
+	"missionReward": {
+          
+		"follower":2,
+          
+		"cash": 50,
+		"xp": 50          
+        
+		}
+      
+	},
+      
+	{"missionTitle":"Break into the local store", 
+      
+	"missionDescription":"Break into the nearby convinience store.",
+
+	"levelReq":10,    
+	"missionReward": {
+          
+		"follower":7,
+          
+		"cash": 150,
+		"xp": 75         
+        	
+		}
+      
+	},
+
+	{"missionTitle":"Break into house", 
+      
+	"missionDescription":"Break into some local house.",
+
+	"levelReq":20,    
+	"missionReward": {
+          
+		"follower":15,
+          
+		"cash": 450,
+		"xp": 125         
+        	
+		}
+      
+	},
+	
+	{"missionTitle":"Rob post office", 
+      
+	"missionDescription":"Rob the local post office",
+
+	"levelReq":30,    
+	"missionReward": {
+          
+		"follower":30,
+          
+		"cash": 900,
+		"xp": 300         
+        	
+		}
+      
+	},
+	
+	{"missionTitle":"Steal cars", 
+      
+	"missionDescription":"Steal and sell cars",
+
+	"levelReq":40,    
+	"missionReward": {
+          
+		"follower":70,
+          
+		"cash": 2100,
+		"xp": 450        
+        	
+		}
+      
+	},
+	
+	{"missionTitle":"Extort protection money", 
+      
+	"missionDescription":"Extort protection money from local shopkeepers.",
+
+	"levelReq":50,    
+	"missionReward": {
+          
+		"follower":160,
+          
+		"cash": 4400,
+		"xp": 1000        
+        	
+		}
+      
+	},
+	
+	{"missionTitle":"Peddle drugs", 
+      
+	"missionDescription":"Sell some drugs to the local folks.",
+
+	"levelReq":55,    
+	"missionReward": {
+          
+		"follower":320,
+          
+		"cash": 9000,
+		"xp": 2100         
+        	
+		}
+      
+	},
+	
+	{"missionTitle":"Rob small bank", 
+      
+	"missionDescription":"Rob a small bank.",
+
+	"levelReq":60,    
+	"missionReward": {
+          
+		"follower":700,
+          
+		"cash": 13000,
+		"xp": 4250         
+        	
+		}
+      
+	},
+	
+	{"missionTitle":"Sell more drugs", 
+      
+	"missionDescription":"Distribute drugs to the city's dealers.",
+
+	"levelReq":65,    
+	"missionReward": {
+          
+		"follower":1300,
+          
+		"cash": 15000,
+		"xp": 8800         
+        	
+		}
+      
+	},
+	
+	{"missionTitle":"Blackmail", 
+      
+	"missionDescription":"Blackmail some highranking officials with compromising photos.",
+
+	"levelReq":70,    
+	"missionReward": {
+          
+		"follower":2700,
+          
+		"cash": 20000,
+		"xp": 20000         
+        	
+		}
+      
+	},
+	
+	{"missionTitle":"Rob large bank", 
+      
+	"missionDescription":"Rob one of the larger banks of the city",
+
+	"levelReq":75,  
+	"missionReward": {
+          
+		"follower":3500,
+          
+		"cash": 25000,
+		"xp": 45000         
+        	
+		}
+      
+	},
+	
+	{"missionTitle":"Illegal stuff!", 
+      
+	"missionDescription":"hush hush...",
+
+	"levelReq":80,  
+	"missionReward": {
+          
+		"follower":4400,
+          
+		"cash": 29000,
+		"xp": 100000         
+        	
+		}
+      
+	},
+	
+	{"missionTitle":"Illegal stuff!", 
+      
+	"missionDescription":"hush hush...",
+
+	"levelReq":85,    
+	"missionReward": {
+          
+		"follower":5300,
+          
+		"cash": 34000,
+		"xp": 150000         
+        	
+		}
+      
+	},
+	
+	{"missionTitle":"Major drug distribution", 
+      
+	"missionDescription":"Recieve and distribute a huge shipment comming from outside of the country",
+
+	"levelReq":90,    
+	"missionReward": {
+          
+		"follower":6200,
+          
+		"cash": 43000,
+		"xp": 200000
+        	
+		}
+      
+	},
+
+	{"missionTitle":"Huge bank heist", 
+      
+	"missionDescription":"Break into the regions largest bank.",
+
+	"levelReq":95,    
+	"missionReward": {
+          
+		"follower":7100,
+          
+		"cash": 52000,
+		"xp": 250000         
+        	
+		}
+      
+	},
+		
+	{"missionTitle":"Helikopterrån!", 
+      
+	"missionDescription":"wubwubwubwub",
+
+	"levelReq":100,    
+	"missionReward": {
+          
+		"follower":8000,
+          
+		"cash": 61000,
+		"xp": 300000
+        	
+		}
+      
+	}       
+      
+	]
+
+}

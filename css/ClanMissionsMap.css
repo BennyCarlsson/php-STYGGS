@@ -1,0 +1,45 @@
+#clanMissionsMap{
+	/*background-image:url('../images/Chicago_Downtown_Aerial_View.jpg');*/
+	background-repeat: no-repeat;
+	/*background-image:url('http://upload.wikimedia.org/wikipedia/commons/6/6f/Chicago_Downtown_Aerial_View.jpg');*/
+	height: auto;
+	width: auto;
+	position: relative;
+	overflow:visible;
+	z-index:3;
+}
+
+.clanMissionButton{
+	position: absolute;	
+	background:url(../images/pistol.png);
+	background-color:black;
+	background-size:37px 30px;
+	background-repeat:no-repeat;
+	display:block;
+	height: 37px;
+	width: 30px;
+	z-index:0;
+}
+
+img.clanMissionButton{
+	
+}
+
+.clanMissionDiv{
+	height: auto;
+	width: auto;
+	position: absolute;	
+	border-radius:5px;
+	background-color: #403F3D;
+	border:solid black 3px;
+	z-index:2;
+}
+
+p.objectiveInfoDiv{
+	font-weight:bold;
+}
+
+.clanMissionClose{
+	float:right;
+	cursor: pointer;
+}

@@ -1,0 +1,56 @@
+body {
+background-image:url('../images/cityBackground2.jpg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size: 100% auto;
+background-color: black;
+color: white;
+width: auto;
+height: auto;
+}
+#topMenuDiv{
+border-radius:5px;
+background-color: rgba(0,0,0,0.85);
+width: 100%;
+text-align: center;
+height: auto;
+border:solid black 3px;
+box-shadow: #000 0px 0px 15px;
+}
+#frontDiv{
+margin-top: 15%;
+margin-left:40%
+}
+#frontDiv label{
+	margin-top: 10px;
+	margin-bottom: -15px;
+}
+#usernameInput{
+	box-shadow: #000 0px 0px 50px;
+}
+#passwordInput{
+	box-shadow: #000 0px 0px 50px;
+}
+#logInButton{
+	box-shadow: #000 0px 0px 50px;
+}
+#frontDiv a{
+	text-decoration:underline;
+	font-weight:bold;
+	background-color: rgba(0,0,0,0.29);	
+	border-radius:31px;
+	box-shadow: #003 0px 0px 42px;
+	margin-left: 85px;
+}
+#footer{
+	margin-left: 25%;
+	width: auto;
+	height: auto;
+	float: right;
+	margin-right:5px;
+	margin-top:25%;
+}
+footer p{
+	color:gray;
+}
+

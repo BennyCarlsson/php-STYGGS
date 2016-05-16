@@ -1,0 +1,73 @@
+{
+  
+	"missionList": [
+      
+	{"missionTitle":"Rob old lady", 
+      
+	"missionDescription":"Rob the old lady who lives next to you.",
+      
+	"levelReq":1,
+	"missionReward": {
+          
+		"follower":1,
+          
+		"cash": 50,
+		"xp": 10          
+        
+		}
+      
+	},
+      
+	{"missionTitle":"Break into the local store", 
+      
+	"missionDescription":"Break into the nearby convinience store.",
+
+	"levelReq":1,    
+	"missionReward": {
+          
+		"follower":2,
+          
+		"cash": 200,
+		"xp": 25         
+        	
+		}
+      
+	},
+
+	{"missionTitle":"Massive xp!", 
+      
+	"missionDescription":"Get ripped!",
+
+	"levelReq":1,    
+	"missionReward": {
+          
+		"follower":100,
+          
+		"cash": 0,
+		"xp": 50000         
+        	
+		}
+      
+	},
+
+
+	{"missionTitle":"Bank heist", 
+      
+	"missionDescription":"Rob Fort Knox.",
+
+	"levelReq":100,    
+	"missionReward": {
+          
+		"follower":100,
+          
+		"cash": 200000000000,
+		"xp": 100000         
+        	
+		}
+      
+	}
+        
+      
+	]
+
+}

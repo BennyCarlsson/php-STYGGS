@@ -1,0 +1,15 @@
+<?php
+
+class mission {	
+	public $title;
+	public $description;
+	public $levelReq;
+	public $reward = array();
+	
+	public function __construct($title, $description, $levelReq, $reward){
+		$this -> title = $title;
+		$this -> description = $description;
+		$this -> levelReq = $levelReq;
+		$this -> reward = $reward;
+	}
+}

@@ -1,0 +1,68 @@
+<?php
+
+require_once('inGame/events/view/eventsView.php');
+require_once('inGame/events/model/eventMission.php');
+require_once('inGame/events/model/eventsDAL.php');
+require_once('inGame/stats/model/eriksStatsUpdate.php');
+require_once('inGame/stats/view/statsSessions.php');
+
+class eventsController{
+	
+	private $eventsView;
+	private $currentMission;	
+	private $eventsDAL;
+	private $statsUpdate;
+	private $statsSession;
+	
+	public function __construct(){
+		$this -> eventsView = new eventsView();
+		$this -> eventsDAL = new eventsDAL();
+		$this -> statsSession = new statsSessions();
+		$this -> statsUpdate = new eriksStatsUpdate();
+		$this -> currentMission = $this -> GetCurrentMission();
+		$this -> CheckPermission();
+		$this -> CheckForCompletion();		
+	}
+	
+	//Check if the user tried to do a random mission
+	private function CheckForCompletion(){
+		if($_SERVER['REQUEST_METHOD'] == "POST"){
+			if(isset($_POST['didRandomMission'])){
+				unset($_POST['didRandomMission']);
+				$this -> GiveRewards($_POST['followerMultiplier']);
+				$this -> MarkDone();
+			}
+		}
+	}
+	
+	public function GetHTML(){
+		return $this -> eventsView -> GetHTML($this -> currentMission);
+	}
+	
+	//Returns current objective
+	private function GetCurrentMission (){
+		$obj = $this -> eventsDAL -> GetCurrentMission();
+		return new eventMission($obj -> EventsMissionsId, $obj -> Name, $obj -> XpReward, $obj -> CashReward);
+	}
+	
+	//Checks if the user is free to complete the mission, e.g he has not done it already
+	//Sets mission to null if not
+	private function CheckPermission(){
+		//TODO Implement proper check
+		$userId = $this -> statsSession -> getUserId();
+		if(!is_null($this -> eventsDAL -> CheckComplete($userId))){
+			$this -> currentMission = NULL;
+		}
+	}
+	
+	private function GiveRewards($followers){
+		$userId = $this -> statsSession -> getUserId();
+		$this -> statsUpdate -> addXp($userId, ($followers * $this -> currentMission -> baseXpReward));
+		$this -> statsUpdate -> addMoney($userId, ($followers * $this -> currentMission -> baseCashReward));
+	}
+	
+	private function MarkDone(){
+		$userId = $this -> statsSession -> getUserId();
+		
+	}
+}
